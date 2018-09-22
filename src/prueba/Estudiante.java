@@ -20,6 +20,20 @@ public class Estudiante extends Persona {
 	public void setProgramas(LinkedList<String> programas) {
 		this.programas = programas;
 	}
+	
+	public String getListaProgramas() {
+		String salida = "{ ";
+		int i = 1;
+		for (String string : programas) {
+			if(i != programas.size())
+				salida = salida + string+ ", " ;
+			else
+				salida = salida + string;
+			i++;
+		}
+		salida = salida + " }";
+		return salida;
+	}
 
 	
 }

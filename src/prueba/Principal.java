@@ -63,7 +63,29 @@ public class Principal {
 		System.out.println(persona2.getNombreCompleto()+" "+persona2.getDireccion()+" "+persona2.getTelefono()+" "+persona2.getCorreo());		
 		System.out.println(persona3.getNombreCompleto()+" "+persona3.getDireccion()+" "+persona3.getTelefono()+" "+persona3.getCorreo());		
 		System.out.println(persona4.getNombreCompleto()+" "+persona4.getDireccion()+" "+persona4.getTelefono()+" "+persona4.getCorreo());		
-
+		
+		Funcionario funcionario1 = new Funcionario("David", "Velasquez");
+		funcionario1.setCargo("Ingeniero");
+		funcionario1.setArea("DTIC");
+		
+		System.out.println("-----------------------------------------------------------");
+		System.out.println("-----------------------------------------------------------");
+		
+		System.out.println(funcionario1.getNombreCompleto()+" "+funcionario1.getCargo()+" "+funcionario1.getArea());
+		
+		Estudiante estudiante1 = new Estudiante("Orlando", "Martinez");
+		LinkedList<String>  listProgramas = new LinkedList<String>();
+		listProgramas.add("Negocios Internacional");
+		listProgramas.add("Finanzas");
+		listProgramas.add("Educación");
+		estudiante1.setProgramas(listProgramas);
+		
+		System.out.println("-----------------------------------------------------------");
+		System.out.println("-----------------------------------------------------------");
+		
+		System.out.println(estudiante1.getNombreCompleto()+" "+estudiante1.getListaProgramas());
+		
+		
 	}
 
 }
