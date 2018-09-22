@@ -1,4 +1,4 @@
-package co.edu.uninorte.prueba;
+package prueba;
 
 /**
  * @author cervantesac
