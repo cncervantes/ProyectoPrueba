@@ -44,7 +44,8 @@ public class Principal {
 			String correo = sc.nextLine();
 			persona.setCorreo(correo);			
 			
-		}		
+		}	
+		sc.close();
 		System.out.println("-----------------------------------------------------------");
 		System.out.println("-----------------------------------------------------------");
 		System.out.println("-----------------------------------------------------------");
